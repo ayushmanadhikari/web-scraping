@@ -1,0 +1,21 @@
+4 types of objects in BS
+1. Tag - corresponds to html or xml tag in original document
+.tag has many attributes and methods among them names and attributes are one
+.tag.name is the name of the tag
+.can be treated as python dictionary
+.tag['name]
+.tag.attrs gives list of all atributes of the tag object
+
+.class is a multivalued attribute 
+.id is not a multivalued attribute
+
+
+2. NavigableString
+.corresponds to a bit of text within a tag
+.can be accessed by tag.string
+.we cannot edit a string in place but can replace one strig with another using replace_with()
+
+
+3.BeautifulSoup
+.represents the parsed document as a whole
+.for most purposes you can treat it like a tag object
